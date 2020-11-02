@@ -1,0 +1,44 @@
+.comics-list-item {
+  margin: 0 20px 20px;
+  padding: 40px;
+  width: calc(calc(100%/3) - 40px);
+  font-size: 20px;
+  background-color: $cardBgColor;
+  border-radius: 10px;
+  list-style: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+  
+  .img-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 28px;
+    color: $comicTitleColor;
+    text-shadow: 2px 2px #000;
+
+    span {
+      color: #333;
+    }
+    
+  }
+
+  .original-title {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #666;
+  }
+
+  .year {
+    margin-bottom: 20px;
+  }
+
+  .price {
+    margin-top: 20px;
+    font-size: 28px;
+    color: $comicTitleColor;
+    font-family: 'Kanit', sans-serif;
+    text-shadow: 2px 2px #000;
+  }
+}

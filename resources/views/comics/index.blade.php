@@ -9,25 +9,33 @@
 </head>
 <body>
   <header>
-    <h1>Il mio negozio di fumetti</h1>
+    <div class="container">
+      <h1>Il mio negozio di fumetti</h1>
+    </div>
   </header>
   <main>
-    <ul>
-      @foreach ($comics as $comic)
-        <img src="{{$comic->cover}}" alt="{{$comic->title}}">
-        <h2>{{$comic->title}} <span>#{{$comic->issue}}</span></h2>
-        <h3>{{$comic->original_title}}</h3>
-        <h4>{{$comic->author}}</h4>
-        <p>{{$comic->year}}</p>
-        <h3>€ {{$comic->price}}</h3>
-        <p>Reading Style: {{$comic->reading}}</p>
-        @if ($comic->color == 1)
-          <p>Color</p>
-        @else 
-          <p>Black and white</p>
-        @endif
-      @endforeach
-    </ul>
+    <div class="container">
+      <ul class="comics-list">
+        @foreach ($comics as $comic)
+        <li class="comics-list-item">
+          <div class="img-container">
+            <img src="{{$comic->cover}}" alt="{{$comic->title}}">
+          </div>
+          <h2 class="title">{{$comic->title}} <span>#{{$comic->issue}}</span></h2>
+          <h3 class="original-title">{{$comic->original_title}}</h3>
+          <h4 class="author">{{$comic->author}}</h4>
+          <p class="year">{{$comic->year}}</p>
+          <p>Reading Style: {{$comic->reading}}</p>
+          @if ($comic->color == 1)
+            <p>Color</p>
+          @else 
+            <p>Black and white</p>
+          @endif
+          <h3 class="price">€ {{$comic->price}}</h3>
+        @endforeach
+        </li>  
+      </ul>
+    </div>
   </main>
 </body>
 </html>
