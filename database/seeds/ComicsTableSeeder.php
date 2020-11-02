@@ -29,7 +29,7 @@ class ComicsTableSeeder extends Seeder
             if (rand(0, 1)) {
                 $comic->reading = "eastern";
             }
-            $comic->cover = "https://loremflickr.com/300/420/comiccover";
+            $comic->cover = "https://placeimg.com/300/420/any";
 
             $comic->save();
         }
