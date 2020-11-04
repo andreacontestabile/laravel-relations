@@ -2,8 +2,14 @@ main {
   padding: 80px 0;
   background-color: $mainBgColor;
 
-  ul.comics-list {
+  ul.cards-list {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  a.back {
+    padding-left: 20px;
+    color: #fff;
+    font-size: 30px;
   }
 }

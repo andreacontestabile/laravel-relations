@@ -33,12 +33,18 @@ main {
   background-color: #9c0000;
 }
 
-main ul.comics-list {
+main ul.cards-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.comics-list-item {
+main a.back {
+  padding-left: 20px;
+  color: #fff;
+  font-size: 30px;
+}
+
+.cards-list-item {
   margin: 0 20px 20px;
   padding: 40px;
   width: calc(calc(100%/3) - 40px);
@@ -49,32 +55,32 @@ main ul.comics-list {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
 }
 
-.comics-list-item .img-container {
+.cards-list-item .img-container {
   margin-bottom: 20px;
   text-align: center;
 }
 
-.comics-list-item .title {
+.cards-list-item .title {
   font-size: 28px;
   color: #cc0000;
   text-shadow: 2px 2px #000;
 }
 
-.comics-list-item .title span {
+.cards-list-item .title span {
   color: #333;
 }
 
-.comics-list-item .original-title {
+.cards-list-item .original-title {
   margin-bottom: 20px;
   font-size: 16px;
   color: #666;
 }
 
-.comics-list-item .year {
+.cards-list-item .year {
   margin-bottom: 20px;
 }
 
-.comics-list-item .price {
+.cards-list-item .price {
   margin-top: 20px;
   font-size: 28px;
   color: #cc0000;
